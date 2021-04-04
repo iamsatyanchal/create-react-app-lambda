@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import "./App.css"
 
 class App extends Component {
   render() {
@@ -17,8 +16,7 @@ class App extends Component {
             <div className="balance" style={{marginBottom: '0px !important'}}>
               <div className="left">
                 <div className="l-wrapper u-pr--16 u-pl--16 u-pt--32" id="list"><div className>
-                    <span className="title">Bitcoin</span>
-                    <h1 className="total"><span style={{fontFamily: 'sans-serif'}}>₹ </span>43,56,682</h1>
+          
                   </div></div>
               </div><div className="right">
                 <svg data-toggle="modal" style={{cursor: 'pointer'}} data-target="#depositActionSheet" width={56} height={56} viewBox="0 0 64 64">
@@ -32,9 +30,7 @@ class App extends Component {
             {/* * Balance */}
             {/* Wallet Footer */}
             {/* * Wallet Footer */}
-            <div className="wallet-footer"> <p style={{marginRight: '12px', fontSize: '14px', marginTop: '2px'}}>Updated: 2021-04-03, 10:24 AM</p> 
-              <div className="u-text--subtle u-text--xs u-text--right"><span className="badge badge-success">+15.08%</span></div>
-            </div></div>
+           </div>
         </div>
         {/* Wallet Card */}
         {/* Deposit Action Sheet */}
