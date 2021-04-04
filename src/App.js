@@ -12,7 +12,7 @@ class App extends Component {
    <Route exact path="/setting" component={Setting} />
     </BrowserRouter>
 </div>
-    )
+    );
   }
 }
 
