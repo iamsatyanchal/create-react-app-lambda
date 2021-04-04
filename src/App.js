@@ -6,9 +6,6 @@ class App extends Component {
       <div className="App">
   <div className="body">
   <div id="appCapsule">
-        <div id="loader" style={{display: 'none'}}>
-          <div className="spinner-border text-primary" role="status" />   
-        </div>
         {/* Wallet Card */}
         <div className="section wallet-card-section pt-1">
           <div className="wallet-card" id="1234bap">
