@@ -1009,4 +1009,4 @@ const Body = () => {
         );
 }
 
-export default Hashnode;
+export default Body;
