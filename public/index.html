@@ -8,6 +8,15 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link rel="stylesheet" href="https://finapp.bragherstudio.com/view2/assets/css/style.css">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&amp;display=swap" as="font" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://finapp.bragherstudio.com/view2/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://finapp.bragherstudio.com/view2/assets/img/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="https://finapp.bragherstudio.com/view2/assets/img/favicon.png">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
@@ -36,5 +45,160 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://crypto-dex.netlify.app/jquery-3.4.1.min.js"></script>
+<script src="https://crypto-dex.netlify.app/app.js"></script>
+<!-- Bootstrap-->
+<script src="https://crypto-dex.netlify.app/popper.min.js"></script>
+<script src="https://crypto-dex.netlify.app/bootstrap.min.js"></script>
+<!-- Ionicons -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js'></script>
+<script  src="https://crypto-dex.netlify.app//script.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- Owl Carousel -->
+<script src="https://crypto-dex.netlify.app/owl.carousel.min.js"></script>
+<!-- Base Js File -->
+<script src="https://crypto-dex.netlify.app/base.js"></script>
+<script>
+    function foo() {
+    if (navigator.onLine) {
+        document.getElementById("toast-8").classList.remove("show");
+} else {
+  document.getElementById("toast-8").classList.add("show");
+}
+setTimeout(foo, 5000);
+}
+
+foo();
+
+function hidethisokay(){
+    document.getElementById("toast-8").classList.remove("show");
+}
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value1').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.ethereum.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=sora&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value2').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.sora.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value3').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.litecoin.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=gnosis&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value4').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.gnosis.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=aave&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value5').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.aave.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=dash&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value6').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.dash.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value7').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.monero.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=maker&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value8').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.maker.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=seth&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value9').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.seth.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=kusama&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value10').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + [data.kusama.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})])
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value11').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.tether.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=uniswap&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value12').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.uniswap.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value13').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.dai.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=sushi&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value14').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.sushi.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=ampleforth&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value15').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.ampleforth.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=funfair&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value16').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.funfair.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=vitae&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value17').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.vitae.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=tokenlon&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value18').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.tokenlon.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=edgeware&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value19').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.edgeware.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=unibright&vs_currencies=inr")
+.then(response => response.json())
+.then(data => document.getElementById('value20').innerHTML = `<span style="font-family: sans-serif;">₹</span>` + (data.unibright.inr.toLocaleString('en-IN', {maximumFractionDigits: 0})))
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/global")
+.then(response => response.json())
+.then(data => document.getElementById('btcpre').innerHTML = (data.data.market_cap_percentage.btc.toFixed(2)) + `<span style="font-family: sans-serif;">%</span>`)
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/global")
+.then(response => response.json())
+.then(data => document.getElementById('ltcpre').innerHTML = (data.data.market_cap_percentage.ltc.toFixed(2)) + `<span style="font-family: sans-serif;">%</span>`)
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/global")
+.then(response => response.json())
+.then(data => document.getElementById('ethpre').innerHTML = (data.data.market_cap_percentage.eth.toFixed(2)) + `<span style="font-family: sans-serif;">%</span>`)
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/global")
+.then(response => response.json())
+.then(data => document.getElementById('xrppre').innerHTML = (data.data.market_cap_percentage.xrp.toFixed(2)) + `<span style="font-family: sans-serif;">%</span>`)
+</script>
+<script>
+fetch("https://api.coingecko.com/api/v3/global")
+.then(response => response.json())
+.then(data => document.getElementById('usdtpre').innerHTML = (data.data.market_cap_percentage.usdt.toFixed(2)) + `<span style="font-family: sans-serif;">%</span>`)
+</script>
   </body>
 </html>
