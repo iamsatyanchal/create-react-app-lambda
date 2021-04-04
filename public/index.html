@@ -19,6 +19,50 @@
     <link rel="shortcut icon" href="https://finapp.bragherstudio.com/view2/assets/img/favicon.png">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	    <style>
+    .wallet-card-section:before {position: absolute;left: 0;right: 0;top: 0;content: "";display: block;height: 140px;background-color:#6236FF;}
+    .wallet-footer{ justify-content: center !important;}
+    .wallet-card{padding-bottom: 3px !important;}
+    
+    </style>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        iframe { 
+      margin: 0px; 
+      padding: 0px; 
+      height: 100%; 
+      border: none; 
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  } 
+    
+  iframe { 
+      display: block; 
+      width: 100%; 
+      border: none; 
+      overflow-y: auto; 
+      overflow-x: hidden;
+   
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  } 
+  .modal-content {
+    border-radius: 8px 8px 0px 0px !important;
+  }
+  #loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
